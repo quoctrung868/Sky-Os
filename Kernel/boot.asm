@@ -8,12 +8,12 @@ section .text
         dd - (0x1BADB002 + 0x00) ;checksum. m+f+c should be zero
 
 global start
-extern kmain	        ;kmain is defined in the c file
+extern kernel_entry	        ;kernel_entry is defined in the c file
 
 start:
   cli 			;block interrupts
   mov esp, stack_space	;set stack pointer
-  call kmain
+  call kernel_entry
   hlt		 	;halt the CPU
 
 section .bss
