@@ -1,4 +1,4 @@
-#include "kernel.h"
+#include "vga.h"
 
 //index for video buffer array
 uint32 vga_index;
@@ -124,20 +124,13 @@ void print_string(char *str)
   }
 }
 
-//print int by converting it into string
-//& then printing string
-void print_int(int num)
-{
-  char str_num[digit_count(num)+1];
-  itoa(num, str_num);
-  print_string(str_num);
-}
+
 
 
 void kernel_entry()
 {
   //first init vga with fore & back colors
-  init_vga(GREEN, BLACK);
+  init_vga(YELLOW, BLUE);
 
   /*call above function to print something
     here to change the fore & back color
