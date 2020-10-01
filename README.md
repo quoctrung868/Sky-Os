@@ -1,2 +1,2 @@
-# Sky-Os
+# Sky OS
 Sky is a basic OS.
