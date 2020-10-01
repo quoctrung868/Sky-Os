@@ -130,7 +130,7 @@ void print_string(char *str)
 void kernel_entry()
 {
   //first init vga with fore & back colors
-  init_vga(YELLOW, BLUE);
+  init_vga(WHITE, BLUE);
 
   /*call above function to print something
     here to change the fore & back color
