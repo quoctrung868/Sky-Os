@@ -1,5 +1,5 @@
-#ifndef KERNEL_H
-#define KERNEL_H
+#ifndef VGA_H
+#define VGA_H
 
 typedef unsigned char uint8;
 typedef unsigned short uint16;
