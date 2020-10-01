@@ -146,7 +146,6 @@ void kernel_entry()
   */
   print_string("This Is Kernel");
   print_new_line();
-  print_int(123456789);
   print_new_line();
   print_string("it can print integer too !");
 
